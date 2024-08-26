@@ -1,0 +1,13 @@
+{
+  "name": "auth-test",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev-front-end": "cd auth-front-end && npm run start",
+    "dev-back-end": "cd auth-back-end && npm run dev"
+  },
+  "author": "Daniel Griffiths",
+  "license": "ISC",
+  "description": "An authentication test app"
+}

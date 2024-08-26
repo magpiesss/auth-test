@@ -1,0 +1,8 @@
+DROP DATABASE IF EXISTS test_auth;
+CREATE DATABASE test_auth;
+
+DROP USER IF EXISTS test_user;
+CREATE USER test_user WITH ENCRYPTED PASSWORD 'very_secure_23';
+
+GRANT ALL PRIVILEGES ON DATABASE test_auth TO test_user;
+ALTER DATABASE test_auth OWNER TO test_user;
